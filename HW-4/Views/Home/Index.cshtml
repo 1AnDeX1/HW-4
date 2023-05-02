@@ -1,0 +1,20 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="fullcontent">
+    <h2>Страница регистрации разработчиков ASP.NET</h2>
+
+    <form method="post" asp-controller="Home" asp-action="Success" class="content">
+        <label asp-for="Name" class="label"></label>
+        <input asp-for="Name" class="input"/>
+        <span asp-validation-for="Name" class="errorspan"></span>
+
+        <label asp-for="Email" class="label"></label>
+        <input asp-for="Email" class="input"/>
+        <span asp-validation-for="Email" class="errorspan"></span>
+
+        <input type="submit" value="Стати розробником ASP.NET" class="input" />
+    </form>
+</div>
